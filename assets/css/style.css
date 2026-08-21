@@ -7,3 +7,15 @@
 body {
   font-family: "roboto", sans-serif;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo {
+  height: 36px;
+  width: 197px;
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
