@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .localisation {
     display: flex;
     flex-direction: row;
@@ -7,4 +10,5 @@
     background-color: #EAEAEA;
     font-weight: 500;
     gap: 17px;
+    color: $grey;
 }
