@@ -1,0 +1,27 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero {
+    h1 {
+    font-family: $text-font;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin: 0 auto 12px auto;
+    max-width: 275px;
+}
+    p {
+        font-family: $text-font;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .btn {
+    @include btn-degrade(#FF79DA, #9356DC);
+    margin: 27px auto 57px;
+}
+
+}
+
