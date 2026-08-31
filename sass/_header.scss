@@ -2,9 +2,11 @@
 @use 'mixins' as *;
 
 .header {
-    @include flex-center; 
+    @include flex-center;
     height: 63px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
 
     .logo {
         width: 162px;
