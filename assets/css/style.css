@@ -22,6 +22,10 @@ body {
   margin-top: 10px;
 }
 
+.hero {
+  background-color: #F6F6F6;
+  padding: 39px 0 57px;
+}
 .hero h1 {
   font-family: "roboto", sans-serif;
   font-weight: 700;
@@ -30,7 +34,6 @@ body {
   text-align: center;
   margin: 0 auto 12px auto;
   max-width: 275px;
-  margin-top: 39px;
 }
 .hero p {
   font-family: "roboto", sans-serif;
@@ -50,7 +53,7 @@ body {
   border-radius: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  margin: 27px auto 57px;
+  margin: 27px auto 0;
 }
 
 .localisation {
@@ -64,4 +67,51 @@ body {
   gap: 17px;
   color: #353535;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fonctionnement {
+  padding: 48px 20px 68px;
+}
+.fonctionnement__liste {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 26px;
+}
+.fonctionnement__liste .etape {
+  margin-left: 12px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 27px;
+  padding-left: 34px;
+  height: 72px;
+  color: #7E7E7E;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement__liste .etape .step__numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  color: white;
+  background-color: #9356DC;
+}
+.fonctionnement__liste .etape:nth-child(3) {
+  color: #9356DC;
+}
+.fonctionnement__liste p {
+  color: black;
+  font-weight: 500;
 }
