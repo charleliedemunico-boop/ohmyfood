@@ -1,0 +1,92 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.restaurants {
+    background-color: $light-grey;
+    padding-bottom: 66px;
+
+    h2 {
+        padding-top: 54px;
+        margin-left: 20px;
+        margin-bottom: 22px;
+    }
+
+    &__liste {
+        margin-left: 17px;
+        margin-right: 17px;
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurant {
+        width: 100%;
+        border-radius: 15px;
+        background-color: white;
+        overflow: hidden;
+
+        &__illustration {
+            width: 100%;
+            height: 174px;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__btn {
+            height: 29px;
+            width: 80px;
+            background-color: $third-color;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            color: #008766;
+            font-size: 14px;
+            font-weight: 500;
+            @include flex-center;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        &__bas {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 16px;
+            position: relative;
+
+            .icon {
+                font-size: 22px;
+                position: absolute;
+                right: 25px;
+                bottom: 33px;
+
+            }
+
+            .like-checkbox {
+                display: none;
+            }
+        }
+
+        &__description {
+            margin-left: 13px;
+
+            p {
+                margin-bottom: 16px;
+                font-size: 17px;
+                font-weight: 300;
+            }
+        }
+
+
+        h3 {
+            margin-bottom: 5px;
+        }
+
+
+    }
+}

@@ -8,6 +8,18 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -114,4 +126,81 @@ body {
 .fonctionnement__liste p {
   color: black;
   font-weight: 500;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding-bottom: 66px;
+}
+.restaurants h2 {
+  padding-top: 54px;
+  margin-left: 20px;
+  margin-bottom: 22px;
+}
+.restaurants__liste {
+  margin-left: 17px;
+  margin-right: 17px;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .restaurant {
+  width: 100%;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+}
+.restaurants .restaurant__illustration {
+  width: 100%;
+  height: 174px;
+  position: relative;
+}
+.restaurants .restaurant__illustration img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants .restaurant__btn {
+  height: 29px;
+  width: 80px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.restaurants .restaurant__bas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+  position: relative;
+}
+.restaurants .restaurant__bas .icon {
+  font-size: 22px;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+}
+.restaurants .restaurant__bas .like-checkbox {
+  display: none;
+}
+.restaurants .restaurant__description {
+  margin-left: 13px;
+}
+.restaurants .restaurant__description p {
+  margin-bottom: 16px;
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurants .restaurant h3 {
+  margin-bottom: 5px;
 }
