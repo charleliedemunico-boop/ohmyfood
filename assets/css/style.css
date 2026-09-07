@@ -65,6 +65,14 @@ body {
   border-radius: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.hero .btn:hover {
+  opacity: 0.85;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+.hero .btn {
   margin: 27px auto 0;
 }
 
@@ -128,6 +136,17 @@ body {
   font-weight: 500;
 }
 
+@media screen and (min-width: 992px) {
+  .fonctionnement {
+    padding: 50px 180px 50px 207px;
+  }
+  .fonctionnement__liste {
+    flex-direction: row;
+  }
+  .fonctionnement__liste .etape {
+    width: 30%;
+  }
+}
 .restaurants {
   background-color: #F6F6F6;
   padding-bottom: 66px;

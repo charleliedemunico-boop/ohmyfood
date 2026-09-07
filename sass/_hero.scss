@@ -23,8 +23,8 @@
     }
 
     .btn {
-        @include btn-degrade(#FF79DA, #9356DC);
+        @include btn-degrade($secondary-color, $primary-color);
         margin: 27px auto 0;
+       
     }
-
 }

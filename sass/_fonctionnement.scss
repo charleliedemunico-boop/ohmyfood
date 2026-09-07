@@ -24,7 +24,7 @@
             padding-left: 34px;
             height: 72px;
             color: #7E7E7E;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) ;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 
             .step__numero {
                 @include flex-center;
@@ -47,6 +47,18 @@
         p {
             color: black;
             font-weight: 500;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fonctionnement {
+        padding: 50px 180px 50px 207px;
+        &__liste {
+            flex-direction: row;
+            .etape {
+                width: 30%;
+            }
         }
     }
 }
