@@ -53,9 +53,20 @@
 
 @media screen and (min-width: 992px) {
     .fonctionnement {
-        padding: 50px 180px 50px 207px;
+        padding: 50px 5%;
+        margin: 0 auto;
+
+        h2 {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
         &__liste {
             flex-direction: row;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding-right: 27px;
+
             .etape {
                 width: 30%;
             }

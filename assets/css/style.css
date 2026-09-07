@@ -138,10 +138,18 @@ body {
 
 @media screen and (min-width: 992px) {
   .fonctionnement {
-    padding: 50px 180px 50px 207px;
+    padding: 50px 5%;
+    margin: 0 auto;
+  }
+  .fonctionnement h2 {
+    max-width: 1080px;
+    margin: 0 auto;
   }
   .fonctionnement__liste {
     flex-direction: row;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-right: 27px;
   }
   .fonctionnement__liste .etape {
     width: 30%;
@@ -224,6 +232,27 @@ body {
   margin-bottom: 5px;
 }
 
+@media screen and (min-width: 992px) {
+  .restaurants {
+    padding: 0 5%;
+  }
+  .restaurants h2 {
+    padding-top: 30px;
+    max-width: 1080px;
+    margin: 0 auto 28px;
+  }
+  .restaurants__liste {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 100px;
+    padding-bottom: 30px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .restaurants .restaurant {
+    width: calc(50% - 50px);
+  }
+}
 .footer {
   background-color: #353535;
   color: white;

@@ -86,3 +86,29 @@
         }
     }
 }
+
+@media screen and (min-width: 992px) {
+    .restaurants {
+        padding: 0 5%;
+
+        h2 {
+            padding-top: 30px;
+            max-width: 1080px;
+            margin: 0 auto 28px;
+        }
+
+        &__liste {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px 100px;
+            padding-bottom: 30px;
+            max-width: 1080px;
+            margin: 0 auto;
+
+        }
+
+        .restaurant {
+            width: calc(50% - 50px);
+        }
+    }
+}
