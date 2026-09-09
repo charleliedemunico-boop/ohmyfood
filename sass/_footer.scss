@@ -6,6 +6,9 @@
     color: white;
     height: 186px;
     padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 
     &__logo {
         filter: brightness(0) invert(1);
@@ -15,9 +18,7 @@
 
     &__nav {
         list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
+
         a {
             text-decoration: none;
             color: white;
@@ -25,10 +26,36 @@
             gap: 11px;
             font-size: 14px;
         }
-        &--link {
+
+        li:nth-child(-n+2) {
             font-weight: 500;
         }
     }
 
 
+}
+
+@media screen and (min-width: 992px) {
+    .footer {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        height: 114px;
+
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+            li {
+                width: 190px;
+                &:nth-child(n+3) {
+                    width:130px;
+                }
+            }
+        }
+
+        &__logo {
+            margin-bottom: 0px;
+
+        }
+    }
 }
