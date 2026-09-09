@@ -12,4 +12,13 @@
         width: 162px;
         margin-top: 10px;
     }
+
+    .arrow {
+        color: $dark-grey;
+        position: absolute;
+        left: 23px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
 }
