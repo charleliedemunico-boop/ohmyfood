@@ -212,13 +212,25 @@ body {
   position: relative;
 }
 .restaurants .restaurant__bas .icon {
-  font-size: 22px;
+  height: 28px;
   position: absolute;
   right: 25px;
   bottom: 33px;
+  transform: opacity 1;
 }
-.restaurants .restaurant__bas .like-checkbox {
-  display: none;
+.restaurants .restaurant__bas .icon:hover {
+  opacity: 0;
+}
+.restaurants .restaurant__bas .icon-full {
+  height: 28px;
+  position: absolute;
+  right: 25px;
+  bottom: 33px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.restaurants .restaurant__bas .icon-full:hover {
+  opacity: 1;
 }
 .restaurants .restaurant__description {
   margin-left: 13px;

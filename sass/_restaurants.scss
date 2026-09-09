@@ -60,14 +60,29 @@
             position: relative;
 
             .icon {
-                font-size: 22px;
+                height: 28px;
                 position: absolute;
                 right: 25px;
                 bottom: 33px;
+                transform: opacity 1;
+
+                &:hover {
+                    opacity: 0;
+                }
             }
 
-            .like-checkbox {
-                display: none;
+            .icon-full {
+                height: 28px;
+                position: absolute;
+                right: 25px;
+                bottom: 33px;
+                opacity: 0;
+                transition: opacity 0.2s ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+                    
+                }
             }
         }
 
