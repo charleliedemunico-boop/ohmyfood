@@ -216,10 +216,6 @@ body {
   position: absolute;
   right: 25px;
   bottom: 33px;
-  transform: opacity 1;
-}
-.restaurants .restaurant__bas .icon:hover {
-  opacity: 0;
 }
 .restaurants .restaurant__bas .icon-full {
   height: 28px;
