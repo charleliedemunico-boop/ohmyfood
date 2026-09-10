@@ -1,21 +1,102 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-.restaurant-infos {
-    position: relative;
-    .icon {
-        right: 41px;
-        top: 40px;
-    }
 
-    .icon-full {
-        right: 41px;
-        top: 40px;
-    }
+.menu {
+    background-color: $light-grey;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -32px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .restaurant-illustration {
     width: 100%;
     height: 275px;
     object-fit: cover;
+}
+
+.restaurant-infos {
+    position: relative;
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-family: $title-font;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .icon {
+        right: 40px;
+        top: 0px;
+    }
+
+    .icon-full {
+        right: 40px;
+        top: 0px;
+    }
+}
+
+.categorie {
+    margin: 40px 13px 40px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h2 {
+        font-family: $text-font;
+        font-size: 16px;
+        font-weight: 300;
+
+        &::after {
+            content: '';
+            margin-top: 6px;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background-color: $third-color;
+        }
+    }
+
+    .carte {
+        padding: 0 15px 0 13.5px;
+        height: 69px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+
+        .nom {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .line {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .description {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .prix {
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}
+
+.btn-commander {
+    @include btn-degrade($secondary-color, $primary-color);
+
 }
