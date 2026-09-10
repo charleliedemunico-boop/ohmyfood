@@ -14,10 +14,14 @@
         filter: brightness(0) invert(1);
         height: 20px;
         margin-bottom: 16px;
+        align-self: flex-start
     }
 
     &__nav {
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
 
         a {
             text-decoration: none;
@@ -40,15 +44,18 @@
         flex-direction: row-reverse;
         align-items: flex-end;
         height: 114px;
+        &__logo {
+            align-self: auto;
+        }
 
         &__nav {
-            display: flex;
             flex-direction: row;
-            gap: 7px;
+
             li {
                 width: 190px;
+
                 &:nth-child(n+3) {
-                    width:130px;
+                    width: 130px;
                 }
             }
         }

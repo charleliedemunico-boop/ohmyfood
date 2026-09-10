@@ -288,9 +288,13 @@ body {
   filter: brightness(0) invert(1);
   height: 20px;
   margin-bottom: 16px;
+  align-self: flex-start;
 }
 .footer__nav {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 .footer__nav a {
   text-decoration: none;
@@ -309,10 +313,11 @@ body {
     align-items: flex-end;
     height: 114px;
   }
+  .footer__logo {
+    align-self: auto;
+  }
   .footer__nav {
-    display: flex;
     flex-direction: row;
-    gap: 7px;
   }
   .footer__nav li {
     width: 190px;
