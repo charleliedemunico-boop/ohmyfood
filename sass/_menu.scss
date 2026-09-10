@@ -1,0 +1,21 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.restaurant-infos {
+    position: relative;
+    .icon {
+        right: 41px;
+        top: 40px;
+    }
+
+    .icon-full {
+        right: 41px;
+        top: 40px;
+    }
+}
+
+.restaurant-illustration {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
