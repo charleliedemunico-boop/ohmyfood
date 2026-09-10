@@ -1,8 +1,9 @@
 @use "variables" as *;
+@use "mixins";
+@use "like";
 @use "base";
 @use "header";
 @use "hero";
-@use "mixins";
 @use "localisation";
 @use "fonctionnement";
 @use "restaurants";

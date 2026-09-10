@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.icon {
+    height: 28px;
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+}
+
+.icon-full {
+    height: 28px;
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+
+    }
+}

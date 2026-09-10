@@ -22,7 +22,9 @@
     position: relative;
     margin-left: 17px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     h1 {
         font-family: $title-font;
@@ -30,14 +32,17 @@
         font-weight: 400;
     }
 
-    .icon {
-        right: 40px;
-        top: 0px;
-    }
+    .coeurs {
+        position: relative;
+        height: 28px;
+        width: 28px;
+        margin-right: 40px;
 
-    .icon-full {
-        right: 40px;
-        top: 0px;
+        .icon,
+        .icon-full {
+            right: 0px;
+            top: 0px;
+        }
     }
 }
 
@@ -99,4 +104,31 @@
 .btn-commander {
     @include btn-degrade($secondary-color, $primary-color);
 
+}
+
+@media screen and (min-width: 992px) {
+
+    
+    .restaurant-infos {
+        justify-content: center;
+        gap: 24px;
+
+    }
+
+    .menu {
+        width: 90%;
+        max-width: 1055px;
+        margin: 0 auto;
+        margin-top: -32px;
+
+
+    }
+
+    .categorie {
+        max-width: 634px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
 }

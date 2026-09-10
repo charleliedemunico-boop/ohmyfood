@@ -59,68 +59,55 @@
             margin-top: 16px;
             position: relative;
 
+            .icon,
+            .icon-full {
+                right: 25px;
+                bottom: 33px;
 
+
+            }
+        }
+
+        &__description {
+            margin-left: 13px;
+
+            p {
+                margin-bottom: 16px;
+                font-size: 17px;
+                font-weight: 300;
+            }
+        }
+
+        h3 {
+            margin-bottom: 5px;
         }
     }
 
-    &__description {
-        margin-left: 13px;
 
-        p {
-            margin-bottom: 16px;
-            font-size: 17px;
-            font-weight: 300;
-        }
-    }
 
-    h3 {
-        margin-bottom: 5px;
-    }
-}
+    @media screen and (min-width: 992px) {
+        .restaurants {
+            padding: 0 5%;
 
-.icon {
-    height: 28px;
-    position: absolute;
-    right: 25px;
-    bottom: 33px;
-}
+            h2 {
+                padding-top: 30px;
+                max-width: 1080px;
+                margin: 0 auto 28px;
+            }
 
-.icon-full {
-    height: 28px;
-    position: absolute;
-    right: 25px;
-    bottom: 33px;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+            &__liste {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 50px 100px;
+                padding-bottom: 30px;
+                max-width: 1080px;
+                margin: 0 auto;
 
-    &:hover {
-        opacity: 1;
+            }
 
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .restaurants {
-        padding: 0 5%;
-
-        h2 {
-            padding-top: 30px;
-            max-width: 1080px;
-            margin: 0 auto 28px;
-        }
-
-        &__liste {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 50px 100px;
-            padding-bottom: 30px;
-            max-width: 1080px;
-            margin: 0 auto;
-
-        }
-
-        .restaurant {
-            width: calc(50% - 50px);
+            .restaurant {
+                width: calc(50% - 50px);
+            }
         }
     }
 }
