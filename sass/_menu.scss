@@ -36,6 +36,7 @@
     justify-content: space-between;
     align-items: center;
 
+
     h1 {
         font-family: $title-font;
         font-size: 28px;
@@ -102,6 +103,9 @@
             .nom {
                 font-size: 18px;
                 font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .line {
@@ -112,6 +116,9 @@
                 .description {
                     font-size: 15px;
                     font-weight: 300;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
 
                 .prix {
@@ -144,9 +151,9 @@
 }
 
 @for $i from 1 through 12 {
-  .carte:nth-child(#{$i}) {
-    animation-delay: ($i - 1) * 0.1s;
-  }
+    .carte:nth-child(#{$i}) {
+        animation-delay: ($i - 1) * 0.1s;
+    }
 }
 
 .btn-commander {

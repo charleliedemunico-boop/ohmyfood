@@ -427,6 +427,9 @@ body {
 .categorie .carte .informations .nom {
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .categorie .carte .informations .line {
   display: flex;
@@ -436,6 +439,9 @@ body {
 .categorie .carte .informations .line .description {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .categorie .carte .informations .line .prix {
   font-size: 15px;
@@ -553,6 +559,7 @@ body {
   }
   100% {
     opacity: 0;
+    pointer-events: none;
   }
 }
 @keyframes gonflement {
